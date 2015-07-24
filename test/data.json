@@ -1,0 +1,14 @@
+{
+    "var1": "blue",
+    "var2": "only screen and (min-width: 18em)",
+    "colors": [ "red", "green", "blue" ],
+    "somestuff": {
+        "apple": "fruit",
+        "cat": "cute",
+        "doctor": {
+            "enemies": [ "cybermen", "dalek", "weeping angels" ],
+            "planet": "gallifrey"
+        }
+    },
+    "other": null
+}

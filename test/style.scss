@@ -1,0 +1,31 @@
+@import "../dist/data";
+
+.someclass {
+    background: $var1;
+
+    @media #{$var2} {
+        background: transparent;
+    }
+}
+
+.otherclass {
+    @for $i from 1 through length($colors) {
+        .color-#{$i - 1} { background: nth($colors, $i); }
+    }
+}
+
+@each $prop, $value in $somestuff {
+    @if type-of($value) == string {
+        .#{$prop} { content: $value; }
+    } @else if type-of($value) == map {
+        @each $p, $v in $value {
+            @if type-of($v) == list {
+                @for $i from 1 through length($v) {
+                    .#{$p} .item-#{$i - 1} { content: nth($v, $i); }
+                }
+            } @else {
+                    .#{$p} { content: $v; }
+            }
+        }
+    }
+}
