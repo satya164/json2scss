@@ -11,6 +11,8 @@ How many times do you need to access some variable which you've stored in a SCSS
 With this library, you can store your variables in JSON and convert it to SCSS just before building the files. It supports plain strings as well as lists and maps, even nested ones.
 
 ## Example
+
+Sample JSON data:
 ```json
 {
     "blueviolet": "#7366bd",
@@ -19,8 +21,44 @@ With this library, you can store your variables in JSON and convert it to SCSS j
 }
 ```
 
+Gnereated SCSS code:
 ```scss
 $blueviolet: #7366bd;
 $bittersweetshimmer: #bf4f51;
 $breakpoints: ( 320, 480, 720 );
+```
+
+## Usage
+
+### Command line
+
+To use the command line version, globally install `json2scss`,
+
+```
+npm install -g json2scss
+```
+
+To convert a JSON file to SCSS, run,
+
+```
+json2scss input.json > output.scss
+```
+
+And you're done.
+
+### Code
+
+To use it in the code, locally install `json2scss`,
+
+```
+npm install --save-dev json2scss
+```
+
+To convert a JSON string or plain object into SCSS,
+
+```
+var json2scss = require("json2scss"),
+    json = require("./data.json");
+
+console.log(json2scss(json));
 ```
