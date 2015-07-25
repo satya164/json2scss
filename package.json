@@ -9,6 +9,9 @@
   "scripts": {
     "test": "node_modules/.bin/mocha test/test.js"
   },
+  "bin": {
+    "json2scss" : "bin/json2scss.js"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:satya164/json2scss.git"

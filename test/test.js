@@ -27,6 +27,6 @@ describe("json2scss", function() {
             outputStyle: "compressed"
         });
 
-        assert.equal(result.css.toString(), fs.readFileSync(__dirname + "/compiled.scss", "utf8"));
+        assert.equal(result.css.toString(), fs.readFileSync(__dirname + "/compiled.scss", "utf8").toString());
     });
 });

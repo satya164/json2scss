@@ -45,10 +45,11 @@ function item2scss(item) {
 }
 
 function json2scss(data) {
-    var scss = "";
+    var json = typeof data === "string" ? JSON.parse(data) : data,
+        scss = "";
 
-    for (var v in data) {
-        scss += "$" + v + ": " + item2scss(data[v]) + ";\n";
+    for (var v in json) {
+        scss += "$" + v + ": " + item2scss(json[v]) + ";\n";
     }
 
     return scss;
