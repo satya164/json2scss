@@ -34,13 +34,13 @@ $breakpoints: ( 320, 480, 720 );
 
 To use the command line version, globally install `json2scss`,
 
-```
+```sh
 npm install -g json2scss
 ```
 
 To convert a JSON file to SCSS, run,
 
-```
+```sh
 json2scss input.json > output.scss
 ```
 
@@ -50,13 +50,13 @@ And you're done.
 
 To use it in the code, locally install `json2scss`,
 
-```
+```sh
 npm install --save-dev json2scss
 ```
 
 To convert a JSON string or plain object into SCSS,
 
-```
+```javascript
 var json2scss = require("json2scss"),
     json = require("./data.json");
 
