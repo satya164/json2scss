@@ -1,5 +1,5 @@
 # json2scss
-Convert JSON to SCSS!
+Convert JSON config files to SCSS!
 
 [![Build status](https://travis-ci.org/satya164/json2scss.svg?branch=master)](https://travis-ci.org/satya164/json2scss)
 [![Dependencies](https://david-dm.org/satya164/json2scss.svg)](https://david-dm.org/satya164/json2scss)
