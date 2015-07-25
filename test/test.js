@@ -3,13 +3,13 @@
 "use strict";
 
 var data = require("./data.json"),
-    json2sass = require("../index.js"),
+    json2scss = require("../index.js"),
     assert = require("assert"),
     fs = require("fs"),
     sass = require("node-sass");
 
-describe("json2sass", function() {
-    it("should convert json to sass", function() {
+describe("json2scss", function() {
+    it("should convert json to scss", function() {
         var result;
 
         try {
@@ -20,7 +20,7 @@ describe("json2sass", function() {
             }
         }
 
-        fs.writeFileSync(__dirname + "/../dist/_data.scss", json2sass(data), "utf8");
+        fs.writeFileSync(__dirname + "/../dist/_data.scss", json2scss(data), "utf8");
 
         result = sass.renderSync({
             file: __dirname + "/style.scss",

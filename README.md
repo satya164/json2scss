@@ -1,9 +1,9 @@
-# json2sass
-Convert JSON to SASS!
+# json2scss
+Convert JSON to SCSS!
 
-[![Build status](https://travis-ci.org/satya164/json2sass.svg?branch=master)](https://travis-ci.org/satya164/json2sass)
-[![Dependencies](https://david-dm.org/satya164/json2sass.svg)](https://david-dm.org/satya164/json2sass)
-[![License](https://img.shields.io/npm/l/json2sass.svg)](http://opensource.org/licenses/mit-license.php)
+[![Build status](https://travis-ci.org/satya164/json2scss.svg?branch=master)](https://travis-ci.org/satya164/json2scss)
+[![Dependencies](https://david-dm.org/satya164/json2scss.svg)](https://david-dm.org/satya164/json2scss)
+[![License](https://img.shields.io/npm/l/json2scss.svg)](http://opensource.org/licenses/mit-license.php)
 
 ## Why?
 How many times do you need to access some variable which you've stored in a SCSS file in your JavaScript? Won't be it great if you could share the same variables in JavaScript and SCSS?

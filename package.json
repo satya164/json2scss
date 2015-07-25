@@ -1,7 +1,7 @@
 {
-  "name": "json2sass",
+  "name": "json2scss",
   "version": "0.0.1",
-  "description": "Convert JSON config files to SASS",
+  "description": "Convert JSON config files to SCSS",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:satya164/json2sass.git"
+    "url": "git@github.com:satya164/json2scss.git"
   },
   "keywords": [
     "json",
@@ -21,9 +21,9 @@
   "author": "Satyajit Sahoo <satyajit.happy@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/satya164/json2sass/issues"
+    "url": "https://github.com/satya164/json2scss/issues"
   },
-  "homepage": "https://github.com/satya164/json2sass",
+  "homepage": "https://github.com/satya164/json2scss",
   "devDependencies": {
     "mocha": "latest",
     "node-sass": "latest"

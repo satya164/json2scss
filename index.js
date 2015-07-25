@@ -4,7 +4,7 @@ function object2map(o) {
     var map = "";
 
     for (var item in o) {
-        map += item2sass(item) + ": " + item2sass(o[item]) + ",\n";
+        map += item2scss(item) + ": " + item2scss(o[item]) + ",\n";
     }
 
     return "(\n" + map.replace(/(,\n)$/, "") + "\n)";
@@ -14,7 +14,7 @@ function array2list(arr) {
     var list = "";
 
     for (var i = 0, l = arr.length; i < l; i++) {
-        list += item2sass(arr[i]);
+        list += item2scss(arr[i]);
 
         if (i !== l - 1) {
             list += ", ";
@@ -24,7 +24,7 @@ function array2list(arr) {
     return "( " + list + " )";
 }
 
-function item2sass(item) {
+function item2scss(item) {
     switch (typeof item) {
     case "string":
         return /(,|:)/.test(item) ? "\"" + item + "\"" : item;
@@ -44,14 +44,14 @@ function item2sass(item) {
     }
 }
 
-function json2sass(data) {
-    var sass = "";
+function json2scss(data) {
+    var scss = "";
 
     for (var v in data) {
-        sass += "$" + v + ": " + item2sass(data[v]) + ";\n";
+        scss += "$" + v + ": " + item2scss(data[v]) + ";\n";
     }
 
-    return sass;
+    return scss;
 }
 
-module.exports = json2sass;
+module.exports = json2scss;
